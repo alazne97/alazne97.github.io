@@ -1,0 +1,47 @@
+
+
+body{
+	background-color: LightSteelBlue;
+	width:900px;
+	margin-left: auto;
+	margin-right: auto;
+	}
+
+h1 {
+	font-family: 'Indie Flower', cursive;
+	color:DarkSlateBlue;
+	font-size: 40px;
+	text-align: center;
+	}
+	
+img {
+	width:800px;
+	}
+	
+div.topnav {
+	font-family: Arial; 
+	font-weight:200px;
+	word-spacing: 0,50em;
+	color: LightSteelBlue;
+	}
+	
+.home {
+	font-size:70px;
+	color:DarkSlateGray;
+	font-family: Arial;
+	}
+	
+.landscapes {
+	color: purple;
+	font-family:
+	font-weight:
+	}
+	
+.culture {
+	}
+	
+.gastronomy {
+	}
+	
+.contact {
+	}
