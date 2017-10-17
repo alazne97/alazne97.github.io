@@ -6,23 +6,93 @@ body{
 	margin-left: auto;
 	margin-right: auto;
 	}
+	
+.homephoto {
+	width: 700px;
+	}
+	
 
+.got {
+	width: 550px;
+	}
+	
+.gott {
+	text-align: left;
+	}
+	
+.weather {
+	color: rgb(121, 35, 232);
+	font-family: 'Lobster';
+	font-size: 30px;
+	text-align: center;
+	}
+
+.weatherr {
+	width: 500px;
+	}	
+		
+.contact {
+	width: 900px;
+	}
+
+.clubs {
+	width: 170px;
+	}
+	
+.culture {
+	width: 400px;
+	}
+	
 h1 {
 	font-family: 'Indie Flower', cursive;
-	color:DarkSlateBlue;
+	color:Indigo;
 	font-size: 40px;
 	text-align: center;
 	}
 	
-img {
-	width:800px;
+.eu {
+	width: 480px;
+
+	}
+
+.ti {
+	font-family: 'Lobster'; 
+	font-size:30px;
+	color: Black;
+	font-weight: normal;
 	}
 	
-div.topnav {
-	font-family: Arial; 
-	font-weight:200px;
-	word-spacing: 0,50em;
-	color: LightSteelBlue;
+
+	}
+	
+.euu {
+	text-align: left;
+	font-size: 25px;
+	  font-family: 'Oregano', cursive;
+  text-shadow: 4px 4px 4px #aaa;
+ 
+}
+	
+.gmail {
+	width:60px;
+		}
+	
+.fb {
+	width:60px;
+		}
+		
+.twitter {
+	width:60px;
+		}
+	
+.topnav {
+	font-family: 'Oregano', cursive;
+	font-weight:600px;
+	font-size: 30px;
+	word-spacing: 0,90em;
+	color: rgb(121, 35, 232);
+	padding-bottom: 40px;
+	text-align: center;
 	}
 	
 .home {
@@ -33,15 +103,26 @@ div.topnav {
 	
 .landscapes {
 	color: purple;
-	font-family:
-	font-weight:
-	}
+	font-family: Times new roman;
+	width: 500px;
 	
-.culture {
 	}
+
+.land {
+	width: 500px;
+	
 	
 .gastronomy {
 	}
 	
 .contact {
 	}
+
+.ey {
+	width: 400px;
+	}
+	
+th{
+	
+}
+	
