@@ -1,17 +1,16 @@
 
-
 body{
 	background-color: LightSteelBlue;
 	width:900px;
 	margin-left: auto;
 	margin-right: auto;
+	text-align: justify;
 	}
 	
 .homephoto {
 	width: 700px;
 	}
 	
-
 .got {
 	width: 550px;
 	}
@@ -26,13 +25,21 @@ body{
 	font-size: 30px;
 	text-align: center;
 	}
+	
+.table-contacto{
+	text-align: center;
+}
+
+.table-contacto th{
+	width: 200px;
+}
 
 .weatherr {
 	width: 500px;
 	}	
 		
 .contact {
-	width: 900px;
+	width: 300px;
 	}
 
 .clubs {
@@ -44,15 +51,42 @@ body{
 	}
 	
 h1 {
-	font-family: 'Indie Flower', cursive;
+	font-family: 'Lobster', cursive;
 	color:Indigo;
 	font-size: 40px;
 	text-align: center;
 	}
 	
+.sli {
+	margin-left: auto;
+	margin-top:auto;
+	width: 750px;
+	height: 400px;
+}
+
+.slip {
+	padding-top: 40px;
+	text-align: left;
+	font-size: 27px;
+	font-family: 'Oregano', cursive;
+    font-weight: normal;
+}
+	
 .eu {
 	width: 480px;
+	}
 
+.ss{
+	width: 480px;
+	height: 300px;
+	}
+	
+.euu {
+	text-align: left;
+	font-size: 27px;
+	font-family: 'Oregano', cursive;
+    font-weight: normal;
+	text-align: justify;
 	}
 
 .ti {
@@ -62,28 +96,17 @@ h1 {
 	font-weight: normal;
 	}
 	
-
-	}
-	
-.euu {
-	text-align: left;
-	font-size: 25px;
-	  font-family: 'Oregano', cursive;
-  text-shadow: 4px 4px 4px #aaa;
- 
-}
-	
 .gmail {
 	width:60px;
-		}
+	}
 	
 .fb {
 	width:60px;
-		}
+	}
 		
 .twitter {
 	width:60px;
-		}
+	}
 	
 .topnav {
 	font-family: 'Oregano', cursive;
@@ -91,7 +114,7 @@ h1 {
 	font-size: 30px;
 	word-spacing: 0,90em;
 	color: rgb(121, 35, 232);
-	padding-bottom: 40px;
+	padding-bottom: 15px;
 	text-align: center;
 	}
 	
@@ -103,26 +126,41 @@ h1 {
 	
 .landscapes {
 	color: purple;
-	font-family: Times new roman;
+font-family: Times new roman;
 	width: 500px;
-	
-	}
-
-.land {
-	width: 500px;
-	
-	
-.gastronomy {
-	}
-	
-.contact {
 	}
 
 .ey {
 	width: 400px;
 	}
+
+	.gmail .twitter .fb{
+	float: right;
+}
 	
-th{
-	
+#slideshow {
+    position:relative;
+	margin: 0 auto;
+    height:350px;
+}
+
+#slideshow IMG {
+	width:600px;
+    position:absolute;
+    top:0;
+    left:0;
+    z-index:8;
+    opacity:0.0;
+	margin-left: 155px;
+    margin-right: auto;
+}
+
+#slideshow IMG.active {
+    z-index:10;
+    opacity:1.0;
+}
+
+#slideshow IMG.last-active {
+    z-index:9;
 }
 	

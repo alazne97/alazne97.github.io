@@ -1,5 +1,33 @@
 <!DOCTYPE html>
 <link href="Styless\style.css" type="text/css" rel="stylesheet">
+
+<script type="text/javascript" src="jquery-1.2.6.min.js"></script>
+
+<script type="text/javascript">
+
+function slideSwitch() {
+    var $active = $('#slideshow IMG.active');
+
+    if ( $active.length == 0 ) $active = $('#slideshow IMG:last');
+
+    
+    var $next =  $active.next().length ? $active.next()
+        : $('#slideshow IMG:first');
+
+    $active.addClass('last-active');
+
+    $next.css({opacity: 0.0})
+        .addClass('active')
+        .animate({opacity: 1.0}, 1000, function() {
+            $active.removeClass('active last-active');
+        });
+}
+
+$(function() {
+    setInterval( "slideSwitch()", 5000 );
+});
+
+</script>
 	<html>
 		<head>
 			<title>Basque Country</title>
@@ -12,10 +40,11 @@
 
 		</div>
 		<div class="topnav">
-			<a href="#home">Home</a>
+			<a href="index.html">Home</a>
 			<a href="landscapes.html">Landscapes</a>
 			<a href="Culture.html">Culture</a>
 			<a href="Gastronomy.html">Gastronomy</a>
+			<a href="music.html">Music</a>
 			<a href="Contact.html">Contact</a>
 		</div>
 		
@@ -29,10 +58,16 @@
       }
     </style>
   </head>
-		
-		<div align="center"><img class="homephoto" src="http://rojocangrejo.com/archivos-subidos/2015/05/nacedero-urederra1.jpg"></div>
-			<p class="euu">If you like beautiful landscapes and want to explore something different this is your place. Basque Country, "País vasco" in spanish, or "Euskadi" in vasc, is an autonomous community located in the North of Spain.</p>
-
+		<div id="slideshow" style="text-align: center;">
+			<img class="sli" src="https://feel-planet.com/wp-content/uploads/2015/12/Gorbea-park.jpg" alt="" />
+			<img class="sli" src="http://rojocangrejo.com/archivos-subidos/2015/05/nacedero-urederra1.jpg" alt="" class="active" />
+			<img class="sli" src="https://d1ez3020z2uu9b.cloudfront.net/imagecache/blog-photos/2255_Fill_670_0.jpg" alt="" />
+			<img class="sli" src="http://cdn.traveler.es/uploads/images/thumbs/201324/top_10_de_pueblos_del_pais_vasco_713548079_1200x800.jpg" alt="" />
+			<img class="sli" src="http://fotolector.diariovasco.com/2013/data/media/1/Peine-Seda-1.jpg" alt="" />
+		</div>
+		<div>
+			<p class="slip">If you like beautiful landscapes and want to explore something different this is your place. Basque Country, "País vasco" in spanish, or "Euskadi" in vasc, is an autonomous community located in the North of Spain.</p>
+		</div>
 			<link href="https://fonts.googleapis.com/css?family=Lobster|Open+Sans+Condensed:300" rel="stylesheet">
 			
 			
@@ -43,17 +78,20 @@
 						<img class="got" src= "https://i.ytimg.com/vi/G4Huzc9qrFQ/maxresdefault.jpg"/>
 					</th>
 					<th>
-						<p class="euu" >For the seventh season, the team of Game of Thrones decided to film in the Basque Country. They chose San Juan de Gaztelugatxe
-						and the beaches of Zumaia and Barrika. San Juan de Gaztelugatxe, located in Bermeo (Biscay), is “Dragonstone” in the TV serie. This islet has
+						<p class="euu" >For the seventh season, the team of Game of Thrones decided to film in the Basque Country. They chose "San Juan de Gaztelugatxe"
+						and the beaches of "Zumaia" and "Barrika". "San Juan de Gaztelugatxe", located in Bermeo (Biscay), is “Dragonstone” in the TV serie. This islet has
 						200 stairs that ends in a small church.</p>
-					</tr>
+					</th>
 				</tr>
 			</table>
+			
 			<h1>Top 8 attractions</h1>
+			
 			<table>
 				<tr>
-					<th class="table-cell">
+					<th>
 					<h1 class="ti">Guggenheim museum</h1>
+					</th>
 				</tr>
 				<tr>
 					<th>
@@ -65,85 +103,108 @@
 					</th>
 				</tr>
 				<tr>
+					<th>
+					<h1 class="ti">Vizcaya Bridge</h1>
+					</th>
 				</tr>
 				<tr>
-					<th class="table-cell">
-					<h1 class="ti">Vizcaya Bridge</h1>
+					<th>
 						<img class="eu" src= "http://amazingbilbao.files.wordpress.com/2013/02/puente-colgante-portugalete.jpg"/>
 					</th>
-					<th class="table-cell">
-						<p class="euu" >This transporter bridge is located in Biscay and its purpose is to link the towns of Portugalete and Las Arenas.
-						It was constructed in 1893 abd it is a World Heritage Site declared by UNESCO."</p>
+					<th>
+						<p class="euu" >This transporter bridge is located in Biscay and its purpose is to link the towns of "Portugalete" and "Las Arenas".
+						It was constructed in 1893 and it is a World Heritage Site declared by UNESCO.</p>
 					</th>
 				</tr>
 				<tr>
+					<th>
+					<h1 class="ti">Forest of Gorbea</h1>
+					</th>
 				</tr>
 				<tr>
-					<th class="table-cell">
-					<h1 class="ti">Forest of Gorbea</h1>
+					<th>
 						<img class="eu" src= "https://101lugaresincreibles.com/wp-content/uploads/2016/01/hayedo-de-otzarreta-2-e1453473917462.jpg"/>
 					</th>
-					<th class="table-cell">
+					<th>
 						<p class="euu" >This forest seems to be bewitched. Gorbea Natural park is a protected area located between
-						Alava and Biscay, it has 20,008 hectares and has a mountain climate. You can find eagles, deers, bobcats and dormouses among others animal species.</p>
+						Alava and Biscay. It has 20,008 hectares and a mountain climate. You can find eagles, deers, bobcats and dormouses among others animal species.</p>
 					</th>
 				</tr>
-					<tr>
-					<th class="table-cell">
+				<tr>
+					<th>
 					<h1 class="ti">Park of Salburua</h1>
+					</th>
+				</tr>
+				<tr>
+					<th>
 						<img class="eu" src= "https://www.conmishijos.com/assets/planes/0000/627-parque-de-salburua.jpg"/>
 					</th>
-					<th class="table-cell">
+					<th>
 						<p class="euu" >This wetland habitat is located in Alava and contains lakes, oaks groves and meadows. There are up to about thirty-five different species
 						of fauna. If you want to relax, don't hesitate on coming here.</p>
 					</th>
 				</tr>
 				<tr>
-					<th class="table-cell">
+					<th>
 					<h1 class="ti">San Sebastian</h1>
-						<img class="eu" src= "https://www.ahstatic.com/photos/1987_ho_00_p_2048x1536.jpg"/>
 					</th>
-					<th class="table-cell">
-						<p class="euu" >San Sebastian, or Donostia in vasc, is the capital of Guipuzcoa. One of the most beautiful places of San Sebastian is its beach, "La Concha". In San Sebastian also takes place the a very famous International Film Festivals. This city is also well known because of its food.</p>
-					</th>
-					</tr>
+				</tr>
 				<tr>
-					<th class="table-cell">
+					<th>
+						<img class="ss" src= "https://www.ahstatic.com/photos/1987_ho_00_p_2048x1536.jpg"/>
+					</th>
+					<th>
+						<p class="euu" >San Sebastian, or "Donostia", in vasc, is the capital of Guipuzcoa and despite being a small city is one of the most famous tourist destinations in Spain. 
+					 . In San Sebastian also takes place a very famous International Film Festival and it was the European Capital of Culture in 2016. This city is also well known because of its food.</p>
+					</th>
+				</tr>
+				<tr>
+					<th>
 				    <h1 class="ti">Zumaia</h1>
+					</th>
+				</tr>
+				<tr>
+					<th>
 						<img class="eu" src= "https://i.pinimg.com/564x/ad/85/71/ad857116fa8dfc096158af1c4b2e47a9.jpg"/>
-				</th>
-				<th class="table-cell">
+					</th>
+					<th>
 						<p class="euu" >Zumaia is a small town located in Gipuzcoa. One of the most beautiful things of Zumaia are its beaches, that are of interest to
 						geologist because they are situated among the longest set of continuous rock strata in the world that has over 100 million years and is known as
 						"flysch". The photo may sound familiar to you, that's because it's the beach where the cast of Game of Thrones lands in the seven season. </p>	
 					</th>
-					</tr>
-				<tr>
 				</tr>
 				<tr>
-					<th class="table-cell">
+					<th>
 					<h1 class="ti">Nervion waterfall</h1>
+					</th>
+				</tr>
+				<tr>
+					<th>
 						<img class="eu" src= "https://static.wixstatic.com/media/8eb57b_856b994f2f874c80bf603ebab2106e24~mv2_d_2781_1462_s_2.jpg/v1/fill/w_1225,h_684,al_c,q_85,usm_0.66_1.00_0.01/8eb57b_856b994f2f874c80bf603ebab2106e24~mv2_d_2781_1462_s_2.webp"/>
 					</th>
-					<th class="table-cell">
+					<th>
 						<p class="euu" >This is the most highest waterfall of Spain and is located in Alava. However, this stream is seasonal because of its karst ground,
 						so if you want to see it you must go on the rainy season.</p>
 					</th>
 				</tr>
 				<tr>
-					<th class="table-cell">
+					<th>
 					<h1 class="ti">Butron castle</h1>
+					</th>
+				</tr>
+				<tr>
+					<th>
 						<img class="eu" src="http://s1.1zoom.me/big3/862/347407-svetik.jpg"/>
 					</th>
-					<th class="table-cell">
-						<p class="euu" >This medieval castle is located in Biscay. It's style is between Germanic, fantasy and bavarian. The purpose of this building was
-						artistic, It's an unconfortable place to live because of the little space caused by the towers.</p>
+					<th>
+						<p class="euu" >This medieval castle is located in Biscay. It's style is between Germanic, fantasy and Bavarian. The purpose of this building was
+						artistic, that's why It's an unconfortable place to live because of the little space caused by the towers.</p>
 					</th>
 				</tr>
 			</table>
 			
 			<p class="weather">Weather</p>
-			<a href="https://www.tiempo.com/pais-vasco.htm?gclid=EAIaIQobChMIj4uQ2dz11gIVzxobCh3aEwpfEAAYASAAEgJNVvD_BwE">
+			<a href="https://www.tiempo.com/pais-vasco.htm?gclid=EAIaIQobChMIj4uQ2dz11gIVzxobCh3aEwpfEAAYASAAEgJNVvD_BwE" target="_blanck">
 			<div align="center"><img class="weatherr" src="https://openclipart.org/image/2400px/svg_to_png/13196/Anonymous-simple-weather-symbols.png"></div>
 	
 			
